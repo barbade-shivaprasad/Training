@@ -1,0 +1,55 @@
+[{
+        "id":"0",
+        "name":"vijay prakash",
+        "score":34,
+        "email":"vijay@technovert.com"
+    },
+    {
+        "id":"1",
+        "name":"Sashi Pagadala",
+        "score":21,
+        "email":"sashi@technovert.com"
+    },
+    {   
+        "id":"2",
+        "name":"Shiva prakash",
+        "score":34,
+        "email":"shiva@technovert.com"
+    },
+    {
+        "id":"3",
+        "name":"Vamshi",
+        "score":51,
+        "email":"vamshi@technovert.com"
+    },
+    {
+        "id":"4",
+        "name":"Pavan",
+        "score":87,
+        "email":"pavan@technovert.com"
+    },
+    {   
+        "id":"5",
+        "name":"vijay Simha",
+        "score":79,
+        "email":"vijay@technovert.com"
+    },
+    {   
+        "id":"6",
+        "name":"Rakesh",
+        "score":46,
+        "email":"rakesh@technovert.com"
+    },
+    {
+        "id":"7",
+        "name":"Manoj",
+        "score":81,
+        "email":"manoj@technovert.com"
+    },
+    {   
+        "id":"8",
+        "name":"Abhinash",
+        "score":34,
+        "email":"avhi@technovert.com"
+    }
+]

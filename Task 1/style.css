@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Roboto:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+body,
+ul,
+p,
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.page-header {
+  color: #ffffff;
+}
+
+.page-title {
+  padding: 24px 20px;
+  font-size: 38px;
+  font-family: "Century Gothic";
+  font-weight: 500;
+  line-height: 38px;
+  background-color: #3399cc;
+  text-transform: uppercase;
+}
+
+.navbar {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-list {
+  margin: 0px 4px;
+  padding: 0px;
+  list-style: none;
+  font-family: "Gadugi";
+}
+
+.navbar-list-item {
+  padding: 7px 15px 5px 15px;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+}
+.navbar img {
+  padding: 3px 20px;
+  margin-top: 3px;
+  height: 24px;
+}
+
+.info-section {
+  border: 1px solid rgb(204, 204, 204);
+  margin: 18px 40px;
+  width: 45%;
+}
+.info-title {
+  margin: 5px 10px;
+  margin-bottom: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.info-list {
+  list-style: none;
+  margin-bottom: 9px;
+}
+.info-list-item:nth-child(1) {
+  padding-top: 4px;
+}
+.info-list-item:nth-child(4) {
+  padding-top: 9px;
+}
+
+.info-list-item {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  padding: 6px 14px;
+}
+.info-list-item::before {
+  content: "-";
+  padding-right: 6px;
+}
+.main-section {
+  margin: 0px 42px;
+  padding: 3px 0px;
+}
+.main-title {
+  padding: 2px 0px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.main-content p {
+  margin: 8px 0px;
+  padding: 2px 0px;
+  width: 60%;
+  font-size: 11px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.main-content p:nth-child(1) {
+  margin-top: 2px;
+}

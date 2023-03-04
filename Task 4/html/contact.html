@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <title>Task 1</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="page-header">
+        <div class="page-title">Technovert</div>
+        <div class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-list-item"><a href="../index.html">Home</a></li>
+            <li class="navbar-list-item"><a href="#">Services</a></li>
+            <li class="navbar-list-item"><a href="careers.html">Careers</a></li>
+            <li class="navbar-list-item active">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <img src="../resources/blog-icon.png" alt="blog-icon" />
+        </div>
+      </div>
+
+      <div class="main-container">
+        <h3 id="error-msg" class="error"></h3>
+        <form id="contact-form">
+          <div class="form-input contact-form-input">
+            <label for="name">My Name</label>
+            <input type="text" id="name" class="contact-form-input" />
+            <span class="required-symbol">*</span>
+            <span id="name-error-msg" class="error"></span>
+          </div>
+          
+          <div class="form-input contact-form-input">
+            <label for="email">My Email</label>
+            <input type="text" id="email" class="contact-form-input" />
+            <span class="required-symbol">*</span>
+            <span id="email-error-msg" class="error"></span>
+          </div>
+          
+          <div class="form-input contact-form-input">
+            <label for="Telephone">My Telephone Number</label>
+            <input type="text" id="telephone"/>
+            <span class="required-symbol"></span>
+            <span id="telephone-error-msg" class="error"></span>
+            
+          </div>
+          
+          <div class="form-input contact-form-input">
+            <label for="gender">Gender</label>
+            
+            <div class="radio-container">
+              <div>
+                <input
+                type="radio"
+                name="gender"
+                id="gender"
+                value="Male"
+                class="m-0"
+                />
+                <label for="gender" class="gender-label">Male</label>
+              </div>
+              <div>
+                <input
+                type="radio"
+                name="gender"
+                id="gender"
+                value="Female"
+                class="m-0"
+                />
+                <label for="gender" class="gender-label">Female</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-input contact-form-input">
+            <label for="organization">My Organization Name</label>
+            <input type="text" id="organization" class="career-form-input" />
+            <span class="required-symbol">*</span>
+            <span id="organization-error-msg" class="error"></span>
+          </div>
+          
+          <div class="form-input contact-form-input">
+            <label for="city">My City</label>
+            <input type="text" />
+          </div>
+          <div class="form-input contact-form-input">
+            <label for="state">My State or Province</label>
+            <div class="drop-down-container">
+              <select name="State or province" id="state" onchange="setPromo()">
+                <option value="none">Select state or province</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Andhra pradesh">Andhra pradesh</option>
+                <option value="Tamil nadu">Tamil Nadu</option>
+                <option value="kerala">kerala</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Madhya pradesh">Madhya pradesh</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Uttar prades">Uttar pradesh</option>
+                <option value="Delhi">Delhi</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Orissa">Orissa</option>
+              </select>
+              <div class="arrow-icon"></div>
+            </div>
+          </div>
+
+          <div class="form-input contact-form-input">
+            <label for="promotion">Promotion</label>
+            <input type="text" id="promotion-code" disabled />
+          </div>
+
+          <div class="form-input contact-form-input">
+            <label for="contact"> Please Contact Me By </label>
+            <div class="radio-container">
+              <div>
+                <input
+                  type="radio"
+                  name="contact-by"
+                  id="contact-by"
+                  class="m-0"
+                />
+                <label for="contact By" class="contact-label">Email</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="contact-by"
+                  id="contact-by"
+                  class="m-0"
+                />
+                <label for="contact By" class="contact-label">Phone</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="contact-by"
+                  id="contact-by"
+                  class="m-0"
+                />
+                <label for="contact By" class="contact-label">Both</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="optional-section">
+            <h4>Optional Information</h4>
+            <p>
+              This information is optional but it help us to serve you better.
+            </p>
+
+            <div class="form-input contact-form-input">
+              <label for="website Address">My Website Address is: </label>
+              <input type="text" name="website-address" id="website" />
+              <span class="required-symbol"></span>
+              <span id="website-error-msg" class="error"></span>
+            </div>
+
+            <div class="form-input contact-form-input no-flex">
+              <div>
+                <label for="more about organization" class="mb-20 w-220">Tell us more about Organization:</label>
+              </div>
+              <textarea
+                name="more about organization"
+                id="more-about-organization"
+                cols="40"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <div class="form-input contact-form-input no-flex">
+              <div>
+                <label for="query" class="mb-20">What I really like to know is:</label>
+              </div>
+              <textarea name="query" id="query" cols="40" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="buttons contact-btns">
+            <button class="btn-submit">
+              Send Message
+            </button>
+            <button class="btn-clear" type="button">Clear Form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- <script src="../script.js"></script> -->
+    <script src="../jquery.js"></script>
+  </body>
+</html>

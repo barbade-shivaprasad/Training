@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <title>Task 1</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/Address.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="page-header">
+        <div class="page-title">Address Book</div>
+        <div class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-list-item"><a href="#">Home</a></li>
+            <li class="navbar-list-item" id="add-item"><a href="#">+Add</a></li>
+          </ul>
+          <img src="./resources/blog-icon.png" alt="blog-icon" />
+        </div>
+      </div>
+      <div id="overlay"></div>
+      <div class="main-section">
+        <div class="contacts-container">
+          <h2 class="contact-title">Contacts</h2>
+        </div>
+        <div id="contact-card" class="d-none contact-card">
+          <div class="contact-top">
+            <div id="contact-name" class="contact-name"></div>
+
+            <div class="contact-icons">
+              <span id="edit">
+                <img src="./resources/Edit-icon.png" alt="edit-icon" class="icon edit-icon">
+                <span>Edit</span>
+              </span>
+              <span id="delete">
+                <img src="./resources/delete1.png" alt="delete-icon" class="icon delete-icon">
+                <span>Delete</span>
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="card-item" id="contact-email">
+            
+          </div>
+          <div class="card-item" >
+            <div id="contact-mobile">
+              
+            </div>
+            <div id="contact-landline">
+              
+            </div>
+          </div>
+          <div class="card-item" id="contact-website">
+            
+          </div>
+          <div class="address card-item" >
+            <span id="address-label">Address: </span>
+            <div id="contact-address">
+              
+            </div>
+          </div>
+        </div>
+
+        <div id="form-container" class="form-container d-none">
+          <img src="./resources/close.png" class="close-icon icon" id="close-icon" alt="close-icon">
+          <form action="" id="contact-form" class="contact-form">
+              <label for="name">Name</label>
+              <span class="error" id="name-error-msg"></span>
+              <div class="input-wrapper">
+                <input type="text" name="name" id="name">
+              </div>
+              
+              <label for="email">Email</label>
+              <span class="error" id="email-error-msg"></span>
+              <div  class="input-wrapper">
+                <input type="email" name="email" id="email">
+              </div>
+              
+              <div class="mobile-container">
+                <div class="mr-10">
+                  <label for="mobile">Mobile</label> 
+                  <span class="error" id="mobile-error-msg"></span>
+                  <div class="input-wrapper">
+                    <input type="text" name="mobile" id="mobile">
+                  </div>            
+                </div>
+                <div>
+                  <label for="landline">Landline</label>  
+                  <span class="error" id="landline-error-msg"></span>
+                  <div  class="input-wrapper">
+                    <input type="text" name="landline" id="landline">
+                  </div>           
+                </div>
+              </div>
+              
+              <label for="website">Website</label>
+              <span class="error" id="website-error-msg"></span>
+              <div  class="input-wrapper">
+                <input type="url" name="website" id="website">
+              </div>
+
+              <label for="Address">Address</label>
+              <div  class="input-wrapper">
+                <textarea name="address"  cols="30" rows="10" id="address"></textarea>
+              </div>
+              
+          </form>
+          <button id="btn-add" class="btn-add">add</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/script.js"></script>
+    <!-- <script src="./js/Dummy.js"></script> -->
+  </body>
+</html>

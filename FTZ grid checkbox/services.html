@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>FITZ World Services</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="services.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <ul class="upper-nav-list">
+        <li class="upper-nav-item">Request a Quote</li>
+        <li class="upper-nav-item">Client Login</li>
+        <li class="upper-nav-item">Vehicle Export Portal</li>
+      </ul>
+      <div class="navbar">
+        <img class="logo" src="./resources/logo.png" alt="logo" />
+        <ul class="navbar-list">
+          <li><div class="navbar-list-item"><a href="index.html">Home</a></div></li>
+          <li><div class="navbar-list-item "><a href="#">About ftzws</a></div></li>
+          <li><div class="navbar-list-item active"><a href="services.html">Our services</a></div></li>
+          <li><div class="navbar-list-item"><a href="#">Our clients</a></div></li>
+          <li><div class="navbar-list-item"><a href="#">contact Us</a></div></li>
+        </ul>
+      </div>
+      <div class="content mt-42 px-30">
+        <div class="content-item w-100">
+          <input type="text" name="search" id="search" class="input-search" placeholder="search">
+          <table id="content-table">
+            <tr>
+              <td class="check-box">
+                <span class="checkbox-wrapper">
+                  <input type="checkbox" name="selectAll" id="select-all"> 
+                </span> 
+              </td>
+              <th class="">Name</td>
+              <th class="">Score</td>
+              <th class="">Email</td>
+              <th class=""></td>
+            </tr>
+          </table>
+
+          <div class="cal-container">
+            <button class="btn-calculate">Calculate</button>
+            <div class="avg">Average :</div>
+            <div class="max">Max :</div>
+          </div>
+        </div>
+ 
+      </div>
+      <div class="page-footer">
+        <div>
+          Copyright © 2010 FTZ World Services. All rights reserved.
+        </div>
+        <ul class="page-footer-links">
+          <li><a href="#">Contact Us</a>I</li>
+          <li><a href="#">Request a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <script>var exports = {};</script>
+    <!-- <script type="module" src="./js/models/userModel.js"></script> -->
+    <script type="module" src="./js/ts/script.js"></script>
+  </body>
+</html>

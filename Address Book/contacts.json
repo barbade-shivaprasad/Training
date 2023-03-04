@@ -1,0 +1,38 @@
+[
+    {
+        "id":"0",
+        "name":"chandermani Arora",
+        "email":"chandermani@technovert.com",
+        "mobile":"+91 9876543219",
+        "landline":987654321,
+        "website":"http://www.technovert.com",
+        "address":"123 now here\nsome street 1\nMadhapur, Hyderabad 500033"
+    },
+    {   
+        "id":"1",
+        "name":"Shashi pagadala",
+        "email":"shashii@technovert.com",
+        "mobile":"+91 9676408169",
+        "landline":123456789,
+        "website":"http://www.technovert.com",
+        "address":"456 now here\nsome street 1\nMadhapur, Hyderabad 500033"
+    },
+    {   
+        "id":"2",
+        "name":"Praveen Battula",
+        "email":"praveen@technovert.com",
+        "mobile":"+91 9478569865",
+        "landline":56478954,
+        "website":"http://www.technovert.com",
+        "address":"789 now here\nsome street 1\nMadhapur, Hyderabad 500033"
+    },
+    {
+        "id":"3",
+        "name":"Vijay Yalamanchili",
+        "email":"vijay@technovert.com",
+        "mobile":"+91 9284732017",
+        "landline":65478956,
+        "website":"http://www.technovert.com",
+        "address":"1564 now here\nsome street 1\nMadhapur, Hyderabad 500033"
+    }
+]
