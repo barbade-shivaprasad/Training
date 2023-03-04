@@ -1,0 +1,60 @@
+﻿@{
+    Contact contact = (dynamic)Model.contact;
+    string[] add = (dynamic)Model.s;
+}
+
+
+    <div id="contact-card" class="d-none contact-card">
+            <div class="contact-top">
+                <div id="contact-name" class="contact-name">@contact.Name</div>
+
+                <div class="contact-icons">
+                    <a asp-action="editcontact" asp-controller="AddressBook" asp-route-id="@contact.Id">
+                        <span id="edit">
+                            <img src="~/resources//Edit-icon.png" alt="edit-icon" class="icon edit-icon">
+                            <span>Edit</span>
+                        </span>
+                    </a>
+                    <span id="delete">
+                    <a asp-action="DeleteContact" asp-route-id="@contact.Id" asp-controller="AddressBook">
+                        <img src="~/resources/delete1.png" alt="delete-icon" class="icon delete-icon">
+                        <span>Delete</span>
+                    </a>
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="card-item" id="contact-email">
+                Email : @contact.Email
+            </div>
+            <div class="card-item">
+                <div id="contact-mobile">
+                    Mobile : @contact.Mobile
+                </div>
+                <div id="contact-landline">
+                    Landline : @contact.Landline
+                </div>
+            </div>
+            <div class="card-item" id="contact-website">
+                Website : @contact.website
+            </div>
+            <div class="address card-item">
+                <span id="address-label">Address: </span>
+
+        
+                <div id="contact-address">
+            @foreach(string item in add)
+            {
+                <text> @item</text>
+            }
+        </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('@contact.Id').classList.add("active");
+        </script>
+
+

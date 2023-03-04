@@ -1,0 +1,10 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+    Layout = "_Layout.cshtml";
+}
+
+<div class="alert alert-danger" role="alert">
+    @ViewData["message"]
+    <a asp-action="index" asp-controller="addressbook"><img src="~/resources/close.png" class="close-icon icon" id="close-icon" alt="close-icon"></a>
+</div>

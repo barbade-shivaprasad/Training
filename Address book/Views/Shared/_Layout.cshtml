@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Address_book</title>
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Address.css" asp-append-version="true" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="page-container">
+        <div class="page-header">
+            <div class="page-title">Address Book</div>
+            <div class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-list-item"><a href="#">Home</a></li>
+                    <li class="navbar-list-item" id="add-item"><a href="/addressbook/addcontact">+Add</a></li>
+                </ul>
+                <img src="~/resources/blog-icon.png" alt="blog-icon" />
+            </div>
+        </div>
+        <div class="main-section">
+            <div class="contacts-container">
+                <h2 class="contact-title">Contacts</h2>
+               
+                @(await Component.InvokeAsync("Contacts"))
+            </div>
+                @RenderBody()
+        </div>
+    </div>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/js/site.js"></script>
+</body>
+</html>

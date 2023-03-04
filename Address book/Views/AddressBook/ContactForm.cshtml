@@ -1,0 +1,73 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Address_book.Models.Contact;
+@{
+    Layout = "~/Views/shared/_Layout.cshtml";
+}
+
+    <div id="overlay"></div>
+    <div id="form-container" class="form-container d-none">
+    <a asp-action="index" asp-controller="addressbook"><img src="~/resources/close.png" class="close-icon icon" id="close-icon" alt="close-icon"></a>
+    <form action="" id="contact-form" class="contact-form" method="post" asp-asp-route-id="2">
+
+        <div class="form-body">
+            <label for="name">Name</label>
+            <span class="error" id="name-error-msg">
+            @Html.ValidationMessageFor(m => m.Name)
+            </span>
+            <div class="input-wrapper">
+                <input type="text" name="name" id="name" value="@Model?.Name?.Trim()">
+            </div>
+
+            <label for="email">Email</label>
+            <span class="error" id="email-error-msg">
+                @Html.ValidationMessageFor(m => m.Email)
+            </span>
+            <div class="input-wrapper">
+                <input type="text" name="email" id="email" value="@Model?.Email?.Trim()">
+            </div>
+
+            <div class="mobile-container">
+                <div class="mr-10">
+                    <label for="mobile">Mobile</label>
+                    <span class="error" id="mobile-error-msg">
+                        @Html.ValidationMessageFor(m => m.Mobile)
+                    </span>
+                    <div class="input-wrapper">
+                        <input type="text" name="mobile" id="mobile" value="@Model?.Mobile?.Trim()">
+                    </div>
+                </div>
+                <div>
+                    <label for="landline">Landline</label>
+                    <span class="error" id="landline-error-msg"></span>
+                    <div class="input-wrapper">
+                        <input type="text" name="landline" id="landline" value="@Model?.Landline?.Trim()">
+                    </div>
+                </div>
+            </div>
+
+            <label for="website">Website</label>
+            <span class="error" id="website-error-msg">
+                @Html.ValidationMessageFor(m => m.website)
+            </span>
+            <div class="input-wrapper">
+                <input type="text" name="website" id="website" value="@Model?.website?.Trim()">
+            </div>
+
+            <label for="Address">Address</label>
+            <div class="input-wrapper">
+                <textarea name="address" cols="30" rows="10" id="address">
+                </textarea>
+            </div>
+
+        </div>
+        <input hidden name="id" value="@Model?.Id"/>
+        <button id="btn-add" class="btn-add" type="submit">@ViewData["button"]</button>
+    </form>
+    
+</div>
+<script>
+    document.getElementById("address").innerHTML = '@Model?.Address'
+    console.log('@Model?.Address')
+</script>
